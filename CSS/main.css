@@ -642,3 +642,265 @@ header {
   }
 }
 /* end Today’s Best Deal  */
+
+/*pc and laptop*/
+section.pc-and-laptop,
+section.gadget {
+  font-family: "segoe ui light";
+  width: 80%;
+  margin: 4rem auto;
+  background-color: #fff;
+  padding: 1rem;
+}
+section.pc-and-laptop .title,
+section.gadget .title {
+  display: flex;
+  gap: 1.6rem;
+  align-items: baseline;
+  margin-block: 1rem;
+}
+section.pc-and-laptop .title h2,
+section.gadget .title h2{
+  
+  font-weight: 900;
+}
+
+section.pc-and-laptop .title a,
+section.gadget .title a{
+    text-decoration: none;
+    color: #0769DA;
+    font-weight: 600;
+    cursor: pointer;
+}
+section.pc-and-laptop .cards-container,
+section.gadget  .cards-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+section.pc-and-laptop .cards-container .card,
+section.gadget  .cards-container .card {
+  width: 24%;
+  height: 34rem;
+}
+section.pc-and-laptop .cards-container .card .image,
+section.gadget  .cards-container .card .image {
+  margin-bottom: 1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+section.pc-and-laptop .cards-container .card .image .sale,
+section.gadget  .cards-container .card .image .sale{
+    position: absolute;
+    z-index: 5;
+    top: .5rem;
+    left: 1rem;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+section.pc-and-laptop .cards-container .card .image .sale p,
+section.gadget  .cards-container .card .image .sale p{
+  margin-block: 0;
+}
+section.pc-and-laptop .cards-container .card .image img,
+section.gadget  .cards-container .card .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.pc-and-laptop .cards-container .card .laptop-description,
+section.gadget  .cards-container .card .gadget-description {
+    padding: 0 .5rem;
+}
+section.pc-and-laptop .cards-container .card .laptop-description span,
+section.gadget  .cards-container .card .gadget-description span,
+section.feedback .feedback-cards .card span{
+    color: #FBBE2D;
+}
+section.pc-and-laptop .cards-container .card .laptop-description h4,
+section.gadget  .cards-container .card .gadget-description h4{
+  margin-top: .5rem;
+  line-height: 1.5rem;
+  color: #27323f;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+section.pc-and-laptop .cards-container .card .laptop-description p,
+section.gadget  .cards-container .card .gadget-description p{
+    color: #48515B;
+    font-weight: 700;
+}
+section.pc-and-laptop .cards-container .card .laptop-description p span,
+section.gadget  .cards-container .card .gadget-description p span{
+    text-decoration: line-through;
+    color:#535e6a ;
+}
+
+section.washing-machine{
+width: 80%;
+  margin: 4rem auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+section.washing-machine .brand-text{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+section.washing-machine .brand-text div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:3rem;
+    gap: 2rem;
+}
+section.washing-machine .brand-text div h6{
+    font-size: 1rem;
+    color:#9CA7AB;
+    letter-spacing: .2rem;
+    font-weight: 900;
+}
+section.washing-machine .brand-text div h2{
+    font-size: 2rem;
+    color: #27323F;
+    font-weight: 900;
+    line-height: 2rem;
+}
+section.washing-machine .brand-text div p{
+    color: #4E515B;
+    
+}
+section.washing-machine .brand-text div a{
+    text-decoration: none;
+    color: #0769DA;
+    font-weight: 900;
+    cursor: pointer;
+}
+section.washing-machine .image{
+    flex: 1;
+    overflow: hidden;
+}
+section.washing-machine .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.top-brands,
+section.feedback{
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.top-brands h3,
+section.feedback h3{
+  font-weight: bold;
+  font-size: 2rem;
+}
+section.top-brands div.brands {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+section.top-brands div.brands .logo{
+  width: calc(100% / 6); 
+  height: 5rem;
+  padding: 0 3rem;
+  border: 1px solid #EBF0F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.top-brands div.brands .logo img{
+  width: 100%;
+  height: 50%;
+}
+section.feedback .feedback-cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+section.feedback .feedback-cards .card{
+  width: calc((100% - 2rem) /3);
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section.feedback .feedback-cards .card .person{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+section.feedback .feedback-cards .card .person .image{
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+      align-items: center;
+}
+
+@media (max-width: 1200px) {
+  section.pc-and-laptop .cards-container .card,
+  section.gadget .cards-container .card {
+    width: 32%;
+  }
+  section.top-brands div.brands {
+    flex-wrap: wrap;
+  }
+  section.top-brands div.brands .logo {
+    width: calc(100% / 3); 
+  }
+}
+@media (max-width: 768px) {
+  section.pc-and-laptop .cards-container .card,
+  section.gadget .cards-container .card {
+    width: 48%;
+  }
+
+  section.washing-machine {
+    flex-direction: column;
+  }
+  section.washing-machine .brand-text,
+  section.washing-machine .image {
+    width: 100%;
+  }
+  section.top-brands div.brands {
+    flex-wrap: wrap;
+  }
+  section.top-brands div.brands .logo {
+    width: calc(100% / 2); 
+  }
+  section.feedback .feedback-cards .card{
+    width: calc((100% - 2rem) /2);}
+}
+
+
+@media (max-width: 480px) {
+  section.pc-and-laptop .cards-container .card,
+  section.gadget .cards-container .card {
+    width: 100%;
+  }
+
+  section.pc-and-laptop .title,
+  section.gadget .title {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  section.top-brands div.brands .logo {
+    width: 100%;
+  }
+  section.feedback .feedback-cards .card{
+    width: 100%;}
+}
